@@ -108,41 +108,7 @@ export default function BelowHeroSection() {
 
   return (
     <div className="bg-gray-900 min-h-screen">
-      {/* Quick Stats Bar */}
-      <div className="bg-gray-800 border-y border-gray-700">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="text-center">
-              <div className="flex items-center justify-center space-x-2">
-                <Trophy className="w-5 h-5 text-yellow-400" />
-                <span className="text-white font-semibold">1,247</span>
-              </div>
-              <p className="text-gray-400 text-sm">Live Events</p>
-            </div>
-            <div className="text-center">
-              <div className="flex items-center justify-center space-x-2">
-                <Users className="w-5 h-5 text-green-400" />
-                <span className="text-white font-semibold">89.2k</span>
-              </div>
-              <p className="text-gray-400 text-sm">Active Players</p>
-            </div>
-            <div className="text-center">
-              <div className="flex items-center justify-center space-x-2">
-                <Gift className="w-5 h-5 text-purple-400" />
-                <span className="text-white font-semibold">$2.1M</span>
-              </div>
-              <p className="text-gray-400 text-sm">Jackpot Prize</p>
-            </div>
-            <div className="text-center">
-              <div className="flex items-center justify-center space-x-2">
-                <Phone className="w-5 h-5 text-red-400" />
-                <span className="text-white font-semibold">24/7</span>
-              </div>
-              <p className="text-gray-400 text-sm">Support</p>
-            </div>
-          </div>
-        </div>
-      </div>
+     
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -224,59 +190,7 @@ export default function BelowHeroSection() {
 />
 
 
-              {/* <div className="flex items-center justify-between mb-6">
-                <h2 className="text-2xl font-bold text-white flex items-center space-x-2">
-                  <Star className="w-6 h-6 text-yellow-400" />
-                  <span>Popular Games</span>
-                </h2>
-                <div className="flex space-x-2">
-                  <button
-                    onClick={() => setActiveTab('popular')}
-                    className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                      activeTab === 'popular'
-                        ? 'bg-yellow-600 text-white'
-                        : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
-                    }`}
-                  >
-                    Popular
-                  </button>
-                  <button
-                    onClick={() => setActiveTab('new')}
-                    className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                      activeTab === 'new'
-                        ? 'bg-yellow-600 text-white'
-                        : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
-                    }`}
-                  >
-                    New
-                  </button>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {popularGames.map((game) => (
-                  <div key={game.id} className="bg-gray-700 rounded-lg p-4 hover:bg-gray-600 transition-colors group cursor-pointer">
-                    <div className="flex items-center space-x-4">
-                      <div className="text-4xl">{game.image}</div>
-                      <div className="flex-1">
-                        <h3 className="text-white font-semibold">{game.name}</h3>
-                        <p className="text-gray-400 text-sm">{game.category}</p>
-                        <div className="flex items-center space-x-3 mt-1">
-                          <div className="flex items-center space-x-1">
-                            <Star className="w-4 h-4 text-yellow-400 fill-current" />
-                            <span className="text-gray-300 text-sm">{game.rating}</span>
-                          </div>
-                          <div className="flex items-center space-x-1">
-                            <Users className="w-4 h-4 text-green-400" />
-                            <span className="text-gray-300 text-sm">{game.players}</span>
-                          </div>
-                        </div>
-                      </div>
-                      <Play className="w-6 h-6 text-gray-400 group-hover:text-yellow-400 transition-colors" />
-                    </div>
-                  </div>
-                ))}
-              </div> */}
+             
             </div>
           </div>
 
@@ -292,7 +206,7 @@ export default function BelowHeroSection() {
               
               <div className="space-y-4">
                 {promotions.map((promo) => (
-                  <div key={promo.id} className={`bg-gradient-to-r ${promo.bgColor} rounded-lg p-4 text-white`}>
+                  <div key={promo.id} className={`bg-gradient-to-r ₹{promo.bgColor} rounded-lg p-4 text-white`}>
                     <h4 className="font-semibold mb-1">{promo.title}</h4>
                     <p className="text-sm opacity-90 mb-3">{promo.description}</p>
                     <div className="flex items-center justify-between">
@@ -315,10 +229,10 @@ export default function BelowHeroSection() {
               
               <div className="space-y-3">
                 {[
-                  { name: "John D.", game: "Mega Fortune", amount: "$12,450" },
-                  { name: "Sarah M.", game: "Blackjack Pro", amount: "$8,200" },
-                  { name: "Mike R.", game: "Sports Bet", amount: "$5,670" },
-                  { name: "Anna K.", game: "Lightning Roulette", amount: "$3,890" }
+                  { name: "Rohit.", game: "Dragon Tiger", amount: "₹12,450" },
+                  { name: "Avinash.", game: "Lucky7", amount: "₹8,200" },
+                  { name: "Nikhil.", game: "Horse Racing", amount: "₹5,670" },
+                  { name: "Aftab.", game: "Aviator", amount: "₹3,890" }
                 ].map((winner, index) => (
                   <div key={index} className="flex items-center justify-between p-3 bg-gray-700 rounded-lg">
                     <div>

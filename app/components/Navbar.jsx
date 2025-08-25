@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { Menu, X, User, Wallet, Bell,  Search } from 'lucide-react';
+import Link from 'next/link';
 
 export default function BettingNavbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -31,28 +32,29 @@ export default function BettingNavbar() {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
-              <div className="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
-      AdaniBetBook
+              <div className="flex items-center text-2xl font-bold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
+                <img src="/images/logo.png" alt="" className='h-10'/>
+     <Link href='/'> ADANI BOOK </Link>
               </div>
             </div>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#" className="text-white hover:text-yellow-400 transition-colors font-medium">
-                Sports
-              </a>
-              <a href="#" className="text-white hover:text-yellow-400 transition-colors font-medium">
-                Live Betting
-              </a>
-              <a href="#" className="text-white hover:text-yellow-400 transition-colors font-medium">
-                Casino
-              </a>
-              <a href="#" className="text-white hover:text-yellow-400 transition-colors font-medium">
-                Poker
-              </a>
-              <a href="#" className="text-white hover:text-yellow-400 transition-colors font-medium">
+              <Link href="/cricket" className="text-white hover:text-yellow-400 transition-colors font-medium">
+           Cricket
+              </Link>
+              <Link href="/football" className="text-white hover:text-yellow-400 transition-colors font-medium">
+              FootBall
+              </Link>
+              <Link href="tennis" className="text-white hover:text-yellow-400 transition-colors font-medium">
+          Tennis
+              </Link>
+              <Link href="/casino" className="text-white hover:text-yellow-400 transition-colors font-medium">
+             Casino Betting
+              </Link>
+             {/*  <Link href="#" className="text-white hover:text-yellow-400 transition-colors font-medium">
                 Promotions
-              </a>
+              </Link> */}
             </div>
 
             {/* Search Bar */}
@@ -117,38 +119,28 @@ export default function BettingNavbar() {
                   <User className="w-5 h-5 text-black" />
                 </div>
                 <div>
-                  <p className="text-white font-medium">John D.</p>
-                  <p className="text-green-400 text-sm font-medium">Balance: $1,247.50</p>
+                  <p className="text-white font-medium">User</p>
+                  <p className="text-green-400 text-sm font-medium">Balance:₹500.00</p>
                 </div>
               </div>
 
-              {/* Search Mobile */}
-              <div className="relative">
-                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
-                <input
-                  type="text"
-                  placeholder="Search games, teams..."
-                  className="w-full bg-gray-700 text-white placeholder-gray-400 pl-10 pr-4 py-2 rounded-lg border border-gray-600 focus:border-yellow-400 focus:outline-none"
-                />
-              </div>
+              
 
               {/* Navigation Links Mobile */}
               <div className="space-y-2">
-                <a href="#" className="block text-white hover:text-yellow-400 py-2 font-medium">
-                  Sports
-                </a>
-                <a href="#" className="block text-white hover:text-yellow-400 py-2 font-medium">
-                  Live Betting
-                </a>
-                <a href="#" className="block text-white hover:text-yellow-400 py-2 font-medium">
-                  Casino
-                </a>
-                <a href="#" className="block text-white hover:text-yellow-400 py-2 font-medium">
-                  Poker
-                </a>
-                <a href="#" className="block text-white hover:text-yellow-400 py-2 font-medium">
-                  Promotions
-                </a>
+                <Link href="/cricket" className="block text-white hover:text-yellow-400 py-2 font-medium">
+                Cricket
+                </Link>
+                <Link href="/football" className="block text-white hover:text-yellow-400 py-2 font-medium">
+                 FootBall
+                </Link>
+                <Link href="/tennis" className="block text-white hover:text-yellow-400 py-2 font-medium">
+                  Tennis
+                </Link>
+                <Link href="/casino" className="block text-white hover:text-yellow-400 py-2 font-medium">
+                Casino Betting
+                </Link>
+               
               </div>
 
               {/* Action Buttons Mobile */}

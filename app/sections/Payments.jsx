@@ -29,7 +29,7 @@ export const Payment = () => {
             >
               <Image
                 src={src}
-                alt={`Payment ${index + 1}`}
+                alt={`Payment ₹{index + 1}`}
                 width={120}
                 height={60}
                 className="object-contain"

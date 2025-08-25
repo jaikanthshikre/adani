@@ -8,9 +8,12 @@ import { Payment } from "./sections/Payments";
 export default function Home() {
   return (
    <>
+  
    <Hero/>
+   
+     <TopGames/>
     <BelowHeroSection/>
-   <TopGames/>
+ 
    <GamingSiteSections/>
   <Payment/>
    </>

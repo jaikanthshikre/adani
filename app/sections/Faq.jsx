@@ -44,73 +44,80 @@ export default function GamingSiteSections() {
   ];
 
   const faqs = [
-    {
-      question: "How quickly can I withdraw my winnings?",
-      answer: "Most withdrawals are processed within 5-30 minutes. Cryptocurrency withdrawals are typically instant, while bank transfers may take 1-3 business days depending on your bank."
-    },
-    {
-      question: "Is my personal and financial information secure?",
-      answer: "Absolutely. We use 256-bit SSL encryption, the same security standard used by major banks. All data is stored on secure servers and we're fully licensed and regulated."
-    },
-    {
-      question: "What games and betting options are available?",
-      answer: "We offer over 3,000 games including slots, table games, live dealers, sports betting, esports, and virtual sports. New games are added weekly."
-    },
-    {
-      question: "Are there any deposit or withdrawal limits?",
-      answer: "Minimum deposits start at $10. Maximum limits depend on your VIP level and payment method. High rollers can request increased limits through our VIP support team."
-    },
-    {
-      question: "How do I know the games are fair?",
-      answer: "All our games use certified random number generators and are regularly audited by independent testing agencies. We also offer provably fair games where you can verify results yourself."
-    },
-    {
-      question: "What bonuses and promotions do you offer?",
-      answer: "New players get a 100% welcome bonus up to $1,000 plus 200 free spins. We also offer daily promotions, cashback rewards, and an exclusive VIP program with personalized bonuses."
-    }
-  ];
+  {
+    question: "How quickly can I withdraw my winnings?",
+    answer:
+      "At Adanibook, most withdrawals are processed instantly within 5–15 minutes for UPI, Paytm, PhonePe, and cryptocurrency. Bank transfers may take 1–3 working days depending on your bank."
+  },
+  {
+    question: "Is my personal and financial information secure?",
+    answer:
+      "Yes, your data is 100% safe. Adanibook uses 256-bit SSL encryption along with advanced fraud protection systems. All transactions are processed through trusted Indian payment gateways and we operate under strict international betting regulations."
+  },
+  {
+    question: "What games and betting options are available on Adanibook?",
+    answer:
+      "We offer a wide range of options including cricket betting, football, tennis, kabaddi, esports, live casino games, slots, and virtual sports. Adanibook is especially popular for IPL betting and Indian casino favorites like Teen Patti and Andar Bahar."
+  },
+  {
+    question: "Are there any deposit or withdrawal limits?",
+    answer:
+      "The minimum deposit at Adanibook starts at just ₹100. Withdrawal limits depend on your payment method and VIP level. High-value players can request higher limits through our 24/7 VIP support team."
+  },
+  {
+    question: "How do I know the games are fair?",
+    answer:
+      "All casino games on Adanibook use certified Random Number Generators (RNGs) and are regularly tested by independent agencies. For sports betting, odds are set transparently and we also offer provably fair games where you can verify results."
+  },
+  {
+    question: "What bonuses and promotions does Adanibook offer?",
+    answer:
+      "New players at Adanibook get a 100% welcome bonus up to ₹10,000 plus free spins on popular slots. We also provide daily cashback, IPL special offers, free bets, and an exclusive VIP Club for loyal Indian players with personalized rewards."
+  }
+];
+
 
   const reviews = [
     {
-      name: "Alex Morgan",
+      name: "Aman",
       rating: 5,
       review: "Best gaming platform I've used in years. Lightning fast payouts and incredible game selection. Customer support actually knows what they're talking about!",
-      game: "Poker & Sports Betting",
+      game: "Andar Bahar",
       date: "2 days ago"
     },
     {
-      name: "Sarah Chen",
+      name: "Saransh",
       rating: 5,
-      review: "Won $25,000 on slots last month and had my money in my account within 10 minutes. No questions asked, no delays. This is how all casinos should operate.",
-      game: "Mega Slots",
+      review: "Won ₹25,000 on slots last month and had my money in my account within 10 minutes. No questions asked, no delays. This is how all casinos should operate.",
+      game: "Horse Racing",
       date: "1 week ago"
     },
     {
-      name: "Marcus Rodriguez",
+      name: "Nikhil",
       rating: 5,
       review: "The live dealers are amazing and the streaming quality is perfect. Feels like being in a real casino from my living room. Highly recommend!",
-      game: "Live Blackjack",
+      game: "Rummy",
       date: "3 days ago"
     },
     {
-      name: "Emma Thompson",
+      name: "Suraj",
       rating: 4,
       review: "Great variety of games and fair odds. The mobile app works flawlessly. Only complaint is I wish there were more cryptocurrency options.",
-      game: "Sports Betting",
+      game: "Dragon Tiger",
       date: "5 days ago"
     },
     {
-      name: "David Kim",
+      name: "Karan",
       rating: 5,
       review: "VIP treatment is incredible. Personal account manager, exclusive bonuses, and priority support. Worth every penny of the higher stakes.",
-      game: "High Roller Tables",
+      game: "Poker",
       date: "1 week ago"
     },
     {
-      name: "Lisa Johnson",
+      name: "Rohit",
       rating: 5,
-      review: "Started with $100 and turned it into $8,000 playing their exclusive tournaments. Fair play guaranteed and transparent odds on everything.",
-      game: "Tournament Poker",
+      review: "Started with ₹100 and turned it into ₹8,000 playing their exclusive tournaments. Fair play guaranteed and transparent odds on everything.",
+      game: "Tennis",
       date: "4 days ago"
     }
   ];
@@ -165,7 +172,7 @@ export default function GamingSiteSections() {
                 >
                   <h3 className="text-xl font-semibold text-white pr-8">{faq.question}</h3>
                   <ChevronDown 
-                    className={`w-6 h-6 text-purple-400 transition-transform duration-200 ${
+                    className={`w-6 h-6 text-purple-400 transition-transform duration-200 ₹{
                       openFaq === index ? 'rotate-180' : ''
                     }`}
                   />

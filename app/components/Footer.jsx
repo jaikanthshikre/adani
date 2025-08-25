@@ -21,11 +21,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-white transition">Home</a></li>
-              <li><a href="#" className="hover:text-white transition">Top Games</a></li>
-              <li><a href="#" className="hover:text-white transition">Live Casino</a></li>
-              <li><a href="#" className="hover:text-white transition">Sports</a></li>
-              <li><a href="#" className="hover:text-white transition">Promotions</a></li>
+              <li><a href="/" className="hover:text-white transition">Home</a></li>
+              <li><a href="/cricket" className="hover:text-white transition">Cricket</a></li>
+              <li><a href="/tennis" className="hover:text-white transition">Tennis</a></li>
+              <li><a href="football" className="hover:text-white transition">Football</a></li>
+              <li><a href="casino" className="hover:text-white transition">Casino</a></li>
             </ul>
           </div>
 
@@ -66,7 +66,7 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="mt-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500">
-          <p>© {new Date().getFullYear()} BetZone. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Adani Book. All rights reserved.</p>
           <p className="mt-2 md:mt-0 text-gray-400">
             18+ | Play Responsibly | Gambling can be addictive
           </p>
