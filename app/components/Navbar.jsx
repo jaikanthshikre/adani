@@ -1,12 +1,16 @@
 'use client'
 
 import React, { useState } from 'react';
-import { Menu, X, User, Wallet, Bell,  Search } from 'lucide-react';
+import { Menu, X, User, Wallet, Bell, Search } from 'lucide-react';
 import Link from 'next/link';
 
 export default function BettingNavbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
- 
+
+  // Function to handle closing the mobile menu on link click
+  const handleMobileLinkClick = () => {
+    setIsMobileMenuOpen(false); // Close the menu when a link is clicked
+  };
 
   return (
     <div className="w-full">
@@ -20,7 +24,12 @@ export default function BettingNavbar() {
             </div>
             <div className="flex items-center space-x-4">
               <span className="hidden md:inline">⚡ Live Events: 1,247</span>
-              <button className="hover:underline font-medium">Join Now</button>
+             <Link href="http://wa.link/iwantadaniid" passHref>
+  <button className="hover:underline font-medium">
+    Join Now
+  </button>
+</Link>
+
             </div>
           </div>
         </div>
@@ -31,30 +40,31 @@ export default function BettingNavbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <div className="flex-shrink-0 flex items-center">
-              <div className="flex items-center text-2xl font-bold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
-                <img src="/images/logo.png" alt="" className='h-10'/>
-     <Link href='/'> ADANI BOOK </Link>
-              </div>
-            </div>
+           {/* Logo */}
+<div className="flex-shrink-0 flex items-center space-x-2">
+  <Link href="/" className="flex items-center space-x-2"> {/* Wrapping both image and name in the same link */}
+    <img src="/images/logo.png" alt="Logo" className="h-10" />
+    <span className="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
+      ADANI BOOK
+    </span>
+  </Link>
+</div>
+
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
               <Link href="/cricket" className="text-white hover:text-yellow-400 transition-colors font-medium">
-           Cricket
+                Cricket
               </Link>
               <Link href="/football" className="text-white hover:text-yellow-400 transition-colors font-medium">
-              FootBall
+                FootBall
               </Link>
-              <Link href="tennis" className="text-white hover:text-yellow-400 transition-colors font-medium">
-          Tennis
+              <Link href="/tennis" className="text-white hover:text-yellow-400 transition-colors font-medium">
+                Tennis
               </Link>
               <Link href="/casino" className="text-white hover:text-yellow-400 transition-colors font-medium">
-             Casino Betting
+                Casino Betting
               </Link>
-             {/*  <Link href="#" className="text-white hover:text-yellow-400 transition-colors font-medium">
-                Promotions
-              </Link> */}
             </div>
 
             {/* Search Bar */}
@@ -86,11 +96,13 @@ export default function BettingNavbar() {
               </button>
 
               {/* User Menu */}
-             
               {/* Deposit Button */}
-              <button className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-medium px-4 py-2 rounded-lg transition-all">
-                Deposit
-              </button>
+             <Link href="http://wa.link/iwantadaniid" passHref>
+  <button className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-medium px-4 py-2 rounded-lg transition-all">
+    Deposit
+  </button>
+</Link>
+
             </div>
 
             {/* Mobile Menu Button */}
@@ -124,23 +136,20 @@ export default function BettingNavbar() {
                 </div>
               </div>
 
-              
-
               {/* Navigation Links Mobile */}
               <div className="space-y-2">
-                <Link href="/cricket" className="block text-white hover:text-yellow-400 py-2 font-medium">
-                Cricket
+                <Link href="/cricket" className="block text-white hover:text-yellow-400 py-2 font-medium" onClick={handleMobileLinkClick}>
+                  Cricket
                 </Link>
-                <Link href="/football" className="block text-white hover:text-yellow-400 py-2 font-medium">
-                 FootBall
+                <Link href="/football" className="block text-white hover:text-yellow-400 py-2 font-medium" onClick={handleMobileLinkClick}>
+                  FootBall
                 </Link>
-                <Link href="/tennis" className="block text-white hover:text-yellow-400 py-2 font-medium">
+                <Link href="/tennis" className="block text-white hover:text-yellow-400 py-2 font-medium" onClick={handleMobileLinkClick}>
                   Tennis
                 </Link>
-                <Link href="/casino" className="block text-white hover:text-yellow-400 py-2 font-medium">
-                Casino Betting
+                <Link href="/casino" className="block text-white hover:text-yellow-400 py-2 font-medium" onClick={handleMobileLinkClick}>
+                  Casino Betting
                 </Link>
-               
               </div>
 
               {/* Action Buttons Mobile */}
