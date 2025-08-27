@@ -24,7 +24,7 @@ export default function BettingNavbar() {
             </div>
             <div className="flex items-center space-x-4">
               <span className="hidden md:inline">⚡ Live Events: 1,247</span>
-             <Link href="http://wa.link/iwantadaniid" passHref>
+             <Link href="http://wa.link/iwantadaniid">
   <button className="hover:underline font-medium">
     Join Now
   </button>

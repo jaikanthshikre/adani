@@ -1,5 +1,6 @@
 'use client'
 import { ArrowDownCircle, Clock, Gift, Phone, Shield, Trophy, Users, Zap } from 'lucide-react';
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 const TopGames = () => {
@@ -170,7 +171,7 @@ const TopGames = () => {
           {/* Games Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {games.map((game) => (
-              <a key={game.id} href="http://wa.link/iwantadaniid" target="_blank" rel="noopener noreferrer">
+              <Link key={game.id} href="http://wa.link/iwantadaniid" target="_blank" rel="noopener noreferrer">
                 <div
                   className="group relative bg-white/[0.04] rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 overflow-hidden border border-gray-700"
                   onMouseEnter={() => setHoveredGame(game.id)}
@@ -223,7 +224,7 @@ const TopGames = () => {
                   {/* Bottom Accent Line */}
                   <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-gray-600 via-gray-500 to-gray-400"></div>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
 
