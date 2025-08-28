@@ -6,7 +6,7 @@ const Hero = () => {
     <>
       <div className="w-full">
         <Image
-          src="/images/banner.png"
+          src="/images/banner.webp"
           alt="Banner"
           width={1920}  
           height={600}  
