@@ -1,4 +1,5 @@
 'use client'
+import Link from "next/link";
 import React from "react";
 import { FaFacebookF, FaTwitter, FaInstagram, FaTelegram, FaYoutube } from "react-icons/fa";
 
@@ -21,11 +22,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="/" className="hover:text-white transition">Home</a></li>
-              <li><a href="/cricket" className="hover:text-white transition">Cricket</a></li>
-              <li><a href="/tennis" className="hover:text-white transition">Tennis</a></li>
-              <li><a href="football" className="hover:text-white transition">Football</a></li>
-              <li><a href="casino" className="hover:text-white transition">Casino</a></li>
+              <li><Link href="/" className="hover:text-white transition">Home</Link></li>
+              <li><Link href="http://wa.link/iwantadaniid" className="hover:text-white transition">Cricket</Link></li>
+              <li><Link href="http://wa.link/iwantadaniid" className="hover:text-white transition">Tennis</Link></li>
+              <li><Link href="http://wa.link/iwantadaniid" className="hover:text-white transition">Football</Link></li>
+              <li><Link href="http://wa.link/iwantadaniid" className="hover:text-white transition">Casino</Link></li>
             </ul>
           </div>
 
@@ -33,11 +34,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Support</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-white transition">Help Center</a></li>
-              <li><a href="#" className="hover:text-white transition">Responsible Gaming</a></li>
-              <li><a href="#" className="hover:text-white transition">Contact Us</a></li>
-              <li><a href="#" className="hover:text-white transition">Terms & Conditions</a></li>
-              <li><a href="#" className="hover:text-white transition">Privacy Policy</a></li>
+              <li className="hover:text-white transition">Help Center</li>
+              <li className="hover:text-white transition">Responsible Gaming</li>
+              <li><Link href="http://wa.link/iwantadaniid" className="hover:text-white transition">Contact Us</Link></li>
+              <li className="hover:text-white transition">Terms & Conditions</li>
+              <li className="hover:text-white transition">Privacy Policy</li>
             </ul>
           </div>
 
@@ -45,21 +46,21 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Follow Us</h3>
             <div className="flex space-x-4">
-              <a href="#" className="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 hover:bg-gray-600 transition">
+        <Link href="http://wa.link/iwantadaniid" className="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 hover:bg-gray-600 transition">
                 <FaFacebookF />
-              </a>
-              <a href="#" className="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 hover:bg-gray-600 transition">
+     </Link>
+        <Link href="http://wa.link/iwantadaniid" className="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 hover:bg-gray-600 transition">
                 <FaTwitter />
-              </a>
-              <a href="#" className="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 hover:bg-gray-600 transition">
+     </Link>
+        <Link href="http://wa.link/iwantadaniid" className="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 hover:bg-gray-600 transition">
                 <FaInstagram />
-              </a>
-              <a href="#" className="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 hover:bg-gray-600 transition">
+     </Link>
+        <Link href="http://wa.link/iwantadaniid" className="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 hover:bg-gray-600 transition">
                 <FaTelegram />
-              </a>
-              <a href="#" className="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 hover:bg-gray-600 transition">
+     </Link>
+        <Link href="http://wa.link/iwantadaniid" className="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800 hover:bg-gray-600 transition">
                 <FaYoutube />
-              </a>
+     </Link>
             </div>
           </div>
         </div>

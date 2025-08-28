@@ -1,13 +1,11 @@
 'use client'
 import React, { useState } from 'react';
-import { 
-  Star, 
-  Trophy, 
-  Zap, 
-  Play, 
-  Clock, 
-  TrendingUp, 
-  Users, 
+import {
+
+  Zap,
+
+  TrendingUp,
+  Users,
   Gift,
   ArrowRight,
 
@@ -108,14 +106,14 @@ export default function BelowHeroSection() {
 
   return (
     <div className="bg-gray-900 min-h-screen">
-     
+
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          
+
           {/* Main Content Area */}
           <div className="lg:col-span-2 space-y-8">
-            
+
             {/* Live Events Section */}
             <div className="bg-gray-800 rounded-xl p-6">
               <div className="flex items-center justify-between mb-6">
@@ -128,7 +126,7 @@ export default function BelowHeroSection() {
                   <ArrowRight className="w-4 h-4" />
                 </button>
               </div>
-              
+
               <div className="space-y-4">
                 {liveEvents.map((event) => (
                   <div key={event.id} className="bg-gray-700 rounded-lg p-4 hover:bg-gray-600 transition-colors">
@@ -157,7 +155,7 @@ export default function BelowHeroSection() {
                           </p>
                         </div>
                       </div>
-                      
+
                       <div className="flex space-x-2">
                         <button className="bg-green-600 hover:bg-green-700 text-white px-3 py-1 rounded text-sm font-medium transition-colors">
                           {event.odds.home}
@@ -180,30 +178,30 @@ export default function BelowHeroSection() {
             {/* Popular Games Section */}
             <div className="bg-gray-800 rounded-xl p-6 ">
 
-          <video 
-  src="/images/videoone.mp4" 
-  autoPlay 
-  loop 
-  muted 
-  playsInline 
-  className="w-full h-auto rounded-xl shadow-lg"
-/>
+              <video
+                src="/images/videoone.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-auto rounded-xl shadow-lg"
+              />
 
 
-             
+
             </div>
           </div>
 
           {/* Sidebar */}
           <div className="space-y-6">
-            
+
             {/* Promotions */}
             <div className="bg-gray-800 rounded-xl p-6">
               <h3 className="text-xl font-bold text-white mb-4 flex items-center space-x-2">
                 <Gift className="w-5 h-5 text-purple-400" />
                 <span>Active Promotions</span>
               </h3>
-              
+
               <div className="space-y-4">
                 {promotions.map((promo) => (
                   <div key={promo.id} className={`bg-gradient-to-r ₹{promo.bgColor} rounded-lg p-4 text-white`}>
@@ -226,13 +224,13 @@ export default function BelowHeroSection() {
                 <TrendingUp className="w-5 h-5 text-green-400" />
                 <span>Recent Winners</span>
               </h3>
-              
+
               <div className="space-y-3">
                 {[
                   { name: "Rohit.", game: "Dragon Tiger", amount: "₹12,450" },
                   { name: "Avinash.", game: "Lucky7", amount: "₹8,200" },
                   { name: "Nikhil.", game: "Horse Racing", amount: "₹5,670" },
-                  { name: "Aftab.", game: "Aviator", amount: "₹3,890" }
+                  { name: "Faizal", game: "Aviator", amount: "₹3,890" }
                 ].map((winner, index) => (
                   <div key={index} className="flex items-center justify-between p-3 bg-gray-700 rounded-lg">
                     <div>
@@ -247,21 +245,7 @@ export default function BelowHeroSection() {
               </div>
             </div>
 
-            {/* Quick Links */}
-           {/*  <div className="bg-gray-800 rounded-xl p-6">
-              <h3 className="text-xl font-bold text-white mb-4">Quick Actions</h3>
-              <div className="space-y-2">
-                <button className="w-full bg-gradient-to-r from-green-600 to-green-700 text-white py-2 rounded-lg font-medium hover:from-green-700 hover:to-green-800 transition-all">
-                  Deposit Funds
-                </button>
-                <button className="w-full bg-gray-700 text-white py-2 rounded-lg font-medium hover:bg-gray-600 transition-colors">
-                  View Bonuses
-                </button>
-                <button className="w-full bg-gray-700 text-white py-2 rounded-lg font-medium hover:bg-gray-600 transition-colors">
-                  Support Center
-                </button>
-              </div>
-            </div> */}
+
           </div>
         </div>
       </div>

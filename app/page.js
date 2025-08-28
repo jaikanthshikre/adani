@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Hero from "./sections/Hero";
 import TopGames from "./sections/Topgames";
 import BelowHeroSection from "./sections/Second";

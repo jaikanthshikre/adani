@@ -1,13 +1,22 @@
-import React from 'react'
+import React from "react";
+import Image from "next/image";
 
 const Hero = () => {
   return (
-   <>
-   <div>
-    <img src="/images/banner.png" alt="" />
-   </div>
-   </>
-  )
-}
+    <>
+      <div className="w-full">
+        <Image
+          src="/images/banner.png"
+          alt="Banner"
+          width={1920}  
+          height={600}  
+          priority    
+          quality={90} 
+          className="w-full h-auto"
+        />
+      </div>
+    </>
+  );
+};
 
-export default Hero
+export default Hero;

@@ -1,14 +1,12 @@
-// app/casino-betting/page.jsx (Next.js 13+ App Router)
-// or pages/casino-betting.jsx (Next.js 12)
 
-import { Dice5, Coins, Gamepad2, Users, ShieldCheck, Smartphone, LineChart } from "lucide-react";
+import { Dice5,  Gamepad2, Users, ShieldCheck, Smartphone, LineChart } from "lucide-react";
 
 export default function CasinoBetting() {
   return (
     <main className="min-h-screen bg-gray-950 text-gray-200">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-green-700 to-green-500 py-16 md:px-6 px-1 text-center">
-        <h1 className="text-2xl md:text-6xl font-extrabold text-white drop-shadow-lg">
+        <h1 className="text-2xl md:text-4xl font-extrabold text-white drop-shadow-lg">
           Casino Betting: A Complete Guide to Online Casino Games
         </h1>
         <p className="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-green-100">

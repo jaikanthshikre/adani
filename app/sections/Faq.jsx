@@ -128,7 +128,7 @@ export default function GamingSiteSections() {
       <section className="py-20 px-4 bg-gradient-to-br from-gray-900 via-gray-800 to-purple-900">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 bg-clip-text text-transparent">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 bg-clip-text text-transparent">
               Why We're the Best Choice
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">

@@ -230,7 +230,7 @@ const TopGames = () => {
 
           {/* View All Button */}
           <div className="text-center mt-12">
-            <button className="bg-gradient-to-r from-gray-200 to-gray-400 text-black px-8 py-4 rounded-xl font-bold text-lg hover:brightness-110 transition-all duration-200 shadow-lg transform hover:scale-105">
+            <button   onClick={() => window.open("https://www.adani999.com/", "_blank")} className="bg-gradient-to-r from-gray-200 to-gray-400 text-black px-8 py-4 rounded-xl font-bold text-lg hover:brightness-110 transition-all duration-200 shadow-lg transform hover:scale-105">
               View All Games
               <span className="ml-2">→</span>
             </button>

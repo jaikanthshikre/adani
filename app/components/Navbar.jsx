@@ -84,7 +84,7 @@ export default function BettingNavbar() {
               {/* Balance */}
               <div className="bg-green-600 text-white px-3 py-1 rounded-lg flex items-center space-x-2">
                 <Wallet className="w-4 h-4" />
-                <span className="font-medium">₹500.00</span>
+                <span className="font-medium">upto ₹500.00</span>
               </div>
 
               {/* Notifications */}
@@ -132,7 +132,7 @@ export default function BettingNavbar() {
                 </div>
                 <div>
                   <p className="text-white font-medium">User</p>
-                  <p className="text-green-400 text-sm font-medium">Balance:₹500.00</p>
+                  <p className="text-green-400 text-sm font-medium">Bonus upto:₹5000.00</p>
                 </div>
               </div>
 
@@ -154,12 +154,10 @@ export default function BettingNavbar() {
 
               {/* Action Buttons Mobile */}
               <div className="pt-4 space-y-3">
-                <button className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white font-medium py-2 rounded-lg">
+               <Link href="http://wa.link/iwantadaniid"> <button className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white font-medium py-2 rounded-lg">
                   Deposit
-                </button>
-                <button className="w-full bg-gray-700 text-white font-medium py-2 rounded-lg border border-gray-600">
-                  My Account
-                </button>
+                </button></Link>
+               
               </div>
             </div>
           </div>
